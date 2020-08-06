@@ -1,0 +1,871 @@
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+		/*Animation for the opening the page*/
+body
+{
+	animation: transitionIn 0.75s;
+}
+@keyframes transitionIn 
+{
+	from
+	{
+		opacity: 0;
+		transform:translateY(-10px);		
+	}
+	to
+	{
+		opacity: 1;
+		transform:translateY(0);	
+	
+	}
+}
+	/*Name Animation */
+	.text-box
+	{
+		margin: 20px auto;
+		display: flex;
+		flex-wrap: wrap;
+		background-color: white;
+	}
+
+	.split-text
+	{
+		padding: 15px;
+		font-size: 100px;
+		font-family: sans-serif;
+	}
+	.slider
+	{
+		height:310px;
+		width: 1310px;
+	}
+	.slider_frame
+	{
+		height:310px;
+		width:1310px;
+		overflow: hidden;
+	}
+			/*Index.html*/
+
+		/*Changing Background color*/	
+	.main
+	{
+		background-image: url('img/p1.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		text-align: justify;
+		margin: 10px;
+		padding: 10px;
+	}
+
+		/*Setting Facebook,instagram,youtube images*/
+	.navbar img
+	{
+		border-radius: 5px;
+		margin-right: 10px;
+	}
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+			/* Contact.html*/
+
+		/* Navigation */		
+
+	.navigation
+	{
+		height: 3em;
+		position: relative;
+		top: 1em;
+		left:1em;
+		text-decoration: bold;
+		font-size: 20px;
+
+	}
+		/*Navigation Link*/
+	.navigation_link
+	{
+		text-decoration: none;
+		color:black;
+
+	}	
+
+		/* Contact Image Animation*/
+	
+	.contact
+	{
+		padding: 1px;
+		height:700px;
+		width:625px;	
+		transform: scale(1.5,1.5);
+	}
+	.contact:hover
+	{
+			animation-name: contact_animation;
+			animation-duration: 20s;
+			animation-direction: alternate;	
+			animation-timing-function: ease-in-out;
+	}
+	@keyframes contact_animation
+	{
+		0% {transform: scale(1.5,1.5)}
+		25% {transform: scale(1,1)}
+		50% {transform: scale(1,1)}
+		100% {transform: scale(1,1)}
+	}
+
+		/* Contact Image Border*/
+
+	.contact_border
+	{
+		overflow: hidden;
+		height: 500px;
+		width: 625px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: grey;
+	}
+
+		/* Contact Description*/
+
+	.contact_description
+	{
+		position: absolute;
+		left: 48em;
+		top:20em;
+		background-color: grey;
+		padding: 10px;
+		border-radius: 40px;
+		margin-right:10px;
+		padding: 20px;
+	}
+
+		/*Contact us*/
+	.contact_us
+	{
+		background-color: blue;
+		border-radius: 10px;
+		padding: 20px;
+		height: 500px;
+		width: 1310px;
+	}
+
+	.contact_us_map
+	{
+		float:left;
+	}
+
+	.contact_us_detail
+	{
+		float:right;
+		height: 450px;
+		width:600px;
+	}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+		/*Product.html*/
+	.product_overview_pro1
+	{
+		border-style: solid;
+		border-width: 1px;
+		border-color: grey;
+		width: 625px;
+		display: inline-block;
+		overflow: hidden;
+		background-color: white;
+	}
+	.product_overview_pro2
+	{
+		border-style: solid;
+		position:relative;
+		left:43em;
+		border-width: 1px;
+		border-color: grey;
+		width: 625px;
+		display: inline-block;
+		overflow: hidden;
+		background-color: white;
+	}
+	.product_overview_pro3
+	{
+		border-style: solid;
+		border-width: 1px;
+		border-color: grey;
+		width: 625px;
+		display: inline-block;
+		overflow: hidden;
+		background-color: white;
+	}
+	.product_overview_pro4
+	{
+		border-style: solid;
+		border-width: 1px;
+		border-color: grey;
+		position:relative;
+		left:43em;
+		width: 625px;
+		display: inline-block;
+		overflow: hidden;
+		background-color: white;
+	}
+	
+	#product_overview_img_pro1
+	{
+		padding: 1px;
+		height:700px;
+		width:625px;	
+	}
+	#product_overview_img_pro2
+	{
+
+		padding: 1px;
+		height:700px;
+		width:625px;	
+	}
+	#product_overview_img_pro3
+	{
+		padding: 1px;
+		height:700px;
+		width:625px;	
+	}
+	#product_overview_img_pro4
+	{
+		padding: 1px;
+		height:700px;
+		width:625px;	
+	}
+	#product_overview_img_pro1:hover, #product_overview_img_pro2:hover, #product_overview_img_pro3:hover, #product_overview_img_pro4:hover   
+	{	
+		animation-name: product_overview_animation;
+		animation-duration: 20s;
+		animation-direction: alternate;
+		animation-timing-function: ease-in-out;				
+	}
+	@keyframes product_overview_animation 
+	{
+		0% {transform: scale(1,1)}
+		25% {transform: scale(1.5,1.5)}
+		50% {transform: scale(2,2)}
+		100% {transform: scale(2.5,2.5)}
+	}
+
+	.product_overview_desc_pro1
+	{
+		position: absolute;
+		left: 45em;
+		top:30em;
+		background-color: grey;
+		padding: 20px;
+		border-radius: 50px;
+		width:610px;
+		height: 200px;
+	}
+	.product_overview_desc_pro2
+	{
+		position: absolute;
+		top:80em;
+		left:25px;
+		background-color: grey;
+		padding: 20px;
+		border-radius: 50px;
+		width:610px;
+		height: 200px;
+	}	
+	.product_overview_desc_pro3
+	{
+		position: absolute;
+		left: 45em;
+		top:113em;
+		background-color: grey;
+		padding: 20px;
+		border-radius: 50px;
+		width:610px;
+		height: 700px;
+	}	
+
+
+	.product_overview_desc_pro4
+	{
+		position: absolute;
+		background-color: grey;
+		padding: 20px;
+		border-radius: 50px;
+		width:610px;
+		height: 700px;
+		top:161em;
+		left:25px;
+	}
+
+	.product_overview_desc2
+	{
+		position: absolute;
+		left: 45em;
+		top:27em;
+		background-color: grey;
+		padding: 20px;
+		border-radius: 50px;
+		width:610px;
+		height: 200px;
+	}	
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+			/*Ceiling.html OR Furniture.html*/
+
+		/*Product Overview*/
+
+	.product_overview
+	{
+		border-style: solid;
+		border-width: 1px;
+		border-color: grey;
+		width: 625px;
+		display: inline-block;
+		overflow: hidden;
+		background-color: white;
+	}
+
+	#product_overview_img
+	{
+		padding: 1px;
+		height:700px;
+		width:625px;	
+	}
+
+	#product_overview_img:hover
+	{	
+		animation-name: product_overview_animation;
+		animation-duration: 20s;
+		animation-direction: alternate;
+		animation-timing-function: ease-in-out;				
+	}
+	@keyframes product_overview_animation 
+	{
+		0% {transform: scale(1,1)}
+		25% {transform: scale(1.5,1.5)}
+		50% {transform: scale(2,2)}
+		100% {transform: scale(2.5,2.5)}
+	}
+
+	.product_overview_desc
+	{
+		position: absolute;
+		left: 45em;
+		top:12em;
+		background-color: grey;
+		padding: 20px;
+		border-radius: 50px;
+		width:610px;
+		height: 700px;
+	}
+
+	.product_overview_desc2
+	{
+		position: absolute;
+		left: 45em;
+		top:27em;
+		background-color: grey;
+		padding: 20px;
+		border-radius: 50px;
+		width:610px;
+		height: 200px;
+	}
+	/* Our product*/
+
+	.our_product
+	{
+		background-color: #f1f1f1;
+		border-radius: 10px;
+	}
+
+	/*Products*/
+
+	#All_products
+	{
+		width: 1310px;
+		overflow: hidden;
+	}
+	#product_border
+	{
+		border-style: solid;
+		border-width: 1px;
+		border-color: grey;
+		width: 625px;
+		margin-top: 40px;
+		margin-right: 30px;
+		display: inline-block;
+		overflow: hidden;
+		background-color:white;
+	}
+
+	#product_img
+	{
+		height:350px;
+		width:625px;
+		padding:1px;
+	}
+
+	/*Product Animation*/
+	#product_img:hover
+	{	
+		animation-name: product_animation;
+		animation-duration: 20s;
+		animation-direction: alternate;
+		animation-timing-function: ease-in-out;				
+	}
+	@keyframes product_animation 
+	{
+		0% {transform: scale(1,1)}
+		25% {transform: scale(1.5,1.5)}
+		50% {transform: scale(2,2)}
+		100% {transform: scale(2.5,2.5)}
+	}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*About Us*/
+
+.about_description
+{
+	height: 500px;
+	width:550px;
+	overflow: auto;
+	top:12em;
+	position: absolute;
+	left: 48em;
+	background-color: grey;
+	padding: 10px;
+	border-radius: 40px;
+	margin-right:10px;
+	padding: 20px;
+}
+
+	.about
+	{
+		padding: 1px;
+		height:700px;
+		width:625px;	
+		transform: scale(1.5,1.5);
+	}
+	.about:hover
+	{
+			animation-name: about_animation;
+			animation-duration: 20s;
+			animation-direction: alternate;	
+			animation-timing-function: ease-in-out;
+	}
+	@keyframes about_animation
+	{
+		0% {transform: scale(1.5,1.5)}
+		25% {transform: scale(1,1)}
+		50% {transform: scale(1,1)}
+		100% {transform: scale(1,1)}
+	}
+
+		/* Contact Image Border*/
+
+	.about_border
+	{
+		overflow: hidden;
+		height: 500px;
+		width: 625px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: grey;
+	}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+	/*Door.html*/
+
+	/*Products*/
+	#All_products_door
+	{
+		width: 1310px;
+		overflow: hidden;
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+	#product_border_door
+	{
+		background-color: white;
+		border-style: solid;
+		border-width: 1px;
+		border-color: grey;
+		width: 300px;
+		margin: 40px;
+		display: inline-block;
+		overflow: hidden;
+	}
+
+	#product_img_door
+	{
+		height:500px;
+		width:300px;
+		padding:1px;
+	}
+
+	/*Product Animation*/
+	#product_img_door:hover
+	{	
+		animation-name: product_animation_door;
+		animation-duration: 20s;
+		animation-direction: alternate;
+		animation-timing-function: ease-in-out;				
+	}
+	@keyframes product_animation_door 
+	{
+		0% {transform: scale(1,1)}
+		25% {transform: scale(1.5,1.5)}
+		50% {transform: scale(2,2)}
+		100% {transform: scale(2.5,2.5)}
+	}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+	/*Navigation bar Heading*/
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.navbar
+{
+	background-color: blue;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+}
+.navbar a 
+{
+	color: white;
+	text-align: left;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 14px 28px;
+}
+.navbar a:hover 
+{
+	background-color: white;
+	color: black;
+}
+.navbar .dropdown:hover
+{
+	background-color:white;
+	color: black; 	
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+	/*Toggle Button*/
+
+#toggle
+{
+	display: none;
+}
+.togglearea
+{
+	background-color: blue;
+	border-bottom: 2px solid white;
+	color: white;
+	padding: 10px;
+	display: flex;
+	justify-content: flex-end;
+}
+.togglearea label
+{
+	background-color: white;
+	height: 45px;
+	width: 50px;
+	color: black;
+	border-radius: 6px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.togglearea label span
+{
+	background-color: black;
+	height: 4px;
+	width: 70%;
+	margin: 2px 0px;
+}
+
+.togglearea
+{
+	display: none;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+	/*Responsive*/
+@media screen and (max-width: 700px)
+{
+	.navbar
+	{
+		flex-direction: column;
+		display: none;
+	}
+	#toggle:checked + .navbar
+	{
+		display: flex;
+	}
+	.togglearea
+	{	
+		display: flex;
+	}
+	.navbar .dropdown
+	{
+		height: 50px;
+		width: 700px;
+		overflow: auto;
+		padding-top: 15px;
+		padding-left: 0px;
+	}
+	.slider
+	{
+		width: 625px;
+	}
+	.slider_frame
+	{
+		height:310px;
+		width:625px;
+		overflow: hidden;
+	}
+	.text-box
+	{
+		width: 625px;
+
+	}
+	.split-text
+	{
+		padding: 7px;
+		font-size: 50px;
+	}
+	/*------------Contact.html------------------------------------------*/
+		/*Contact Details*/
+	.contact_us 
+	{
+		width: 625px;
+		height: 900px;
+	}
+	.contact_info
+	{
+		width: 625px;
+		height: 900px;
+	}
+	.contact_description
+	{
+		position: absolute;
+		left: 0em;
+		top:50em;
+		background-color: grey;
+		padding: 10px;
+		border-radius: 40px;
+		margin:15px;
+		padding: 20px;
+	}
+
+	/*-------------About.html--------------------------------------------*/
+
+	.about_info
+	{
+		width: 625px;
+		height: 1200px;
+	}
+	.about_description
+	{
+		position: absolute;
+		left: 0em;
+		width: 625px;
+		top:50em;
+		background-color: grey;
+		padding: 10px;
+		border-radius: 40px;
+		margin:15px;
+		padding: 20px;
+	}
+	/*------------Ceiling.html------------------------------------------*/
+
+		/*Product Overview Description*/
+
+	.product_overview_info_pro1
+	{
+		width: 625px;
+		height:900px; 	
+	}
+	.product_overview_desc_pro1
+	{
+		position: absolute;
+		left: 0em;
+		top:61em;
+		background-color: grey;
+		margin:15px;
+		padding: 20px;
+		border-radius: 50px;
+		width:625px;
+		height: 200px;
+	}		
+	.product_overview_info_pro2
+	{
+		width: 625px;
+		height:900px; 	
+	}
+	.product_overview_desc_pro2
+	{
+		position: absolute;
+		left: 0em;
+		top:122em;
+		background-color: grey;
+		margin:15px;
+		padding: 20px;
+		border-radius: 50px;
+		width:625px;
+		height: 200px;
+	}	
+	.product_overview_pro2
+	{
+		left:0em;
+	}
+
+	.product_overview_info_pro3
+	{
+		width: 625px;
+		height:1450px; 	
+	}
+	.product_overview_desc_pro3
+	{
+		position: absolute;
+		left: 0em;
+		top:185em;
+		background-color: grey;
+		margin:15px;
+		padding: 20px;
+		border-radius: 50px;
+		width:625px;
+		height: 700px;
+	}	
+
+	.product_overview_info_pro4
+	{
+		width: 625px;
+		height:1500px; 	
+	}
+	.product_overview_desc_pro4
+	{
+		position: absolute;
+		left: 0em;
+		top:280em;
+		background-color: grey;
+		margin:15px;
+		padding: 20px;
+		border-radius: 50px;
+		width:625px;
+		height: 700px;
+	}	
+	.product_overview_pro4
+	{
+		left:0em;
+	}
+
+
+	
+
+	.product_overview_info
+	{
+		width: 625px;
+		height: 1450px;
+	}
+	.product_overview_info2
+	{
+		width: 625px;
+		height: 950px;
+	}
+	.product_overview_desc
+	{
+		position: absolute;
+		left: 0em;
+		top:60em;
+		background-color: grey;
+		margin:15px;
+		padding: 20px;
+		border-radius: 50px;
+		width:625px;
+		height: 700px;
+	}
+	.product_overview_desc2
+	{
+		position: absolute;
+		left: 0em;
+		top:58em;
+		background-color: grey;
+		margin:15px;
+		padding: 20px;
+		border-radius: 50px;
+		width:625px;
+		height: 200px;
+	}
+	
+
+		/*Products*/
+
+	#All_products
+	{
+		width: 625px;
+		overflow: hidden;
+	}
+
+		/*Door.html*/
+	#All_products_door
+	{
+		width: 625px;
+		overflow: hidden;
+		padding-left: 120px;
+		padding-right: 120px; 
+	}
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+	/*Dropdown*/
+	.dropdown
+	{
+		color: black;
+		padding:15px; 
+	}
+	.dropdown-content 
+	{
+  		display: none;
+  		margin-top:22px;
+  		position: absolute;
+  		background-color: #f9f9f9;
+  		min-width: 160px;
+  		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  		z-index: 1;
+	}
+
+	.dropdown:hover .dropdown-content
+	{
+		display: block;
+		
+	}
+	.dropdown:hover a
+	{
+		color : black;
+	}
+	.dropdown-content a 
+	{
+  		color: black;
+  		padding: 12px 16px;
+  		text-decoration: none;
+  		display: block;
+  		text-align: left;
+	}
+	.dropdown-content a:hover 
+	{
+		background-color: #f1f1f1;
+	}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
